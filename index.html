@@ -202,6 +202,23 @@ img { max-width: 100%; display: block; }
 .side-nav-item:hover::after { opacity: 1; }
 .side-nav-arrow { display: none; }
 
+/* ===== NOMINEES BANNER ===== */
+.nominees-banner {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  background: var(--gold); color: #0A0804;
+  padding: 13px 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em;
+  text-transform: uppercase; text-decoration: none;
+  transition: background 0.2s;
+  margin-top: 52px; /* clear top nav */
+  margin-left: 42px; /* clear side nav on desktop */
+}
+.nominees-banner:hover { background: var(--gold-light); text-decoration: none; color: #0A0804; }
+.nominees-banner-arrow { font-size: 1rem; transition: transform 0.2s; }
+.nominees-banner:hover .nominees-banner-arrow { transform: translateX(4px); }
+@media(max-width: 900px) { .nominees-banner { margin-left: 0; margin-top: 52px; } }
+
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh; display: flex; flex-direction: column;
@@ -773,6 +790,12 @@ footer {
   <div class="side-nav-item" data-section="6" onclick="document.getElementById('era-6').scrollIntoView({behavior:'smooth'})" data-tip="Streaming Age">06</div>
 </nav>
 
+<!-- NOMINEES BANNER -->
+<a href="nominees.html" class="nominees-banner">
+  <span class="nominees-banner-label">★ 98TH NOMINEES — MAKE YOUR PICKS</span>
+  <span class="nominees-banner-arrow">→</span>
+</a>
+
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg-layer"></div>
@@ -806,10 +829,6 @@ footer {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
       SHARE THIS GUIDE
     </button>
-    <a class="hero-btn" href="nominees.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
-      98TH NOMINEES
-    </a>
     <!-- PDF DOWNLOAD — uncomment when ready
     <a class="hero-btn" href="oscars.pdf" download>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
