@@ -86,8 +86,7 @@ a:hover { text-decoration: underline; }
 [data-theme="light"] .nav { background: rgba(248,243,232,0.96); }
 .nav-brand { font-family: 'DM Sans', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em; color: var(--text-muted); text-transform: uppercase; white-space: nowrap; text-decoration: none; }
 .nav-brand:hover { color: var(--accent); text-decoration: none; }
-.nav-sep { color: var(--text-muted); font-size: 0.75rem; }
-.nav-topic { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; white-space: nowrap; }
+.nav-topic { color: var(--gold); font-style: italic; text-transform: none; letter-spacing: 0.1em; }
 .nav-right { margin-left: auto; display: flex; align-items: center; gap: 14px; }
 .theme-btn { background: none; border: 1px solid var(--border); color: var(--text-muted); cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.1em; padding: 4px 10px; transition: all 0.2s; text-transform: uppercase; }
 .theme-btn:hover { border-color: var(--gold); color: var(--gold); }
@@ -150,7 +149,7 @@ a:hover { text-decoration: underline; }
 .cat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--gold); transition: height 0.3s ease; }
 .cat-card:hover::before { height: 100%; }
 .cat-card:hover { border-color: var(--gold); }
-.cat-name { font-family: 'DM Sans', sans-serif; font-size: 0.84rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.cat-name { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
 
 /* NOMINEE ROW — INTERACTIVE */
 .nominee-row {
@@ -186,18 +185,18 @@ a:hover { text-decoration: underline; }
   transform: translateY(-65%) rotate(45deg);
 }
 
-.nominee-name { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; line-height: 1.2; color: var(--text); transition: color 0.2s; }
-.nominee-film { font-size: 1.0rem; color: var(--text-muted); font-weight: 300; font-style: italic; }
+.nominee-name { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; line-height: 1.2; color: var(--text); transition: color 0.2s; }
+.nominee-film { font-size: 1.1rem; color: var(--text-muted); font-weight: 300; font-style: italic; }
 
 /* Best Picture */
 .cat-card.best-picture { grid-column: 1 / -1; background: linear-gradient(135deg, #1C1610 0%, #0A0804 100%); border-color: var(--gold); }
 .cat-card.best-picture .cat-name { color: var(--gold); }
 .cat-card.best-picture .nominee-name { color: #EDE8DC; }
-.cat-card.best-picture .nominee-film { color: #8A7B65; font-style: normal; font-size: 0.72rem; }
+.cat-card.best-picture .nominee-film { color: #8A7B65; font-style: normal; font-size: 0.79rem; }
 [data-theme="light"] .cat-card.best-picture .nominee-film { color: #A09070; }
 .cat-card.best-picture::before { background: var(--crimson); }
 .cat-card.best-picture .nominee-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; padding-left: 34px; }
-.cat-card.best-picture .nominee-name { font-size: 1.5rem; }
+.cat-card.best-picture .nominee-name { font-size: 1.65rem; }
 .cat-card.best-picture .nominee-row.picked .nominee-name { color: var(--gold); }
 
 /* TOAST */
@@ -214,7 +213,7 @@ a:hover { text-decoration: underline; }
 /* FOOTER */
 footer { background: #040302; padding: 32px 80px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
 .footer-left { font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; font-weight: 300; letter-spacing: 0.1em; color: var(--gold); text-transform: uppercase; }
-.footer-right { font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.1em; }
+.footer-right { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.1em; }
 .footer-right a { color: var(--text-muted); }
 .footer-right a:hover { color: var(--gold); }
 .color-strip { display: flex; height: 16px; }
@@ -243,9 +242,7 @@ footer { background: #040302; padding: 32px 80px; border-top: 1px solid var(--bo
 
 <!-- NAV -->
 <nav class="nav">
-  <a href="index.html" class="nav-brand">A (Brief) History of The Oscars_</a>
-  <span class="nav-sep">→</span>
-  <span class="nav-topic">98TH NOMINEES</span>
+  <a href="index.html" class="nav-brand">A (BRIEF) HISTORY OF EVERYTHING_ <span class="nav-topic">The Oscars</span></a>
   <div class="nav-right">
     <button class="theme-btn" id="theme-btn">☀ LIGHT</button>
   </div>
